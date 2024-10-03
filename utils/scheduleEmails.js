@@ -7,13 +7,13 @@ async function sendEmail(userEmail, currentAmount) {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'amasimarvellous@gmail.com', // Your email
-      pass: 'vee120!!!' // Your email password
+      user: 'info@4xeleventrade.store', // Your email
+      pass: 'Qaz1wsx2.' // Your email password
     }
   });
 
   let mailOptions = {
-    from: 'amasimarvellous@gmail.com',
+    from: 'info@4xeleventrade.store',
     to: userEmail,
     subject: '4Elevenfxtrade update',
     text: `Your current investment amount is: $${currentAmount.toFixed(2)}`
